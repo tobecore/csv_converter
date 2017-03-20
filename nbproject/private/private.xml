@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/controllers/index.html</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/views/example.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/controllers/Examples.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/models/Payee_model.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/system/core/Controller.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/models/Grocery_crud_model.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/.htaccess</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/controllers/Banks.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/config/config.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/config/database.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/libraries/Grocery_CRUD.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/models/Skip_lines_model.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/controllers/Upload.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/models/Bank_model.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/models/Map_model.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/libraries/Financial_report_converter.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/system/core/Loader.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/models/Payee_rules_model.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/config/routes.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/libraries/index.html</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/views/upload_form.php</file>
+            <file>file:/Applications/MAMP/htdocs/csvformatconverter/application/views/upload_success.php</file>
+        </group>
+    </open-files>
+</project-private>
