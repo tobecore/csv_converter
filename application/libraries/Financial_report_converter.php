@@ -8,7 +8,7 @@ class Financial_report_converter {
     
     public function convert($fileurl, $bank, $delimiter, $currency, $currencyPattern, $skipLines, $map, $dateFormat, $payees) {
              
-        print_r($payees);
+        //print_r($payees);
         $result_string = ""; // string that will contain result csv
         $currencyMatch = ""; // temporary variable for currency
         $payeesList = Array();

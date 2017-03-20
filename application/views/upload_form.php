@@ -31,12 +31,12 @@
 
 
     <br /><br />
-    <a href="http://csv.hardessence.com/index.php/banks/banks_management">Banks</a><br />
-    <a href="http://csv.hardessence.com/index.php/banks/maps_management/">Maps</a><br />
-    <a href="http://csv.hardessence.com/index.php/banks/skip_lines/">Skip Lines</a><br />
-    <a href="http://csv.hardessence.com/index.php/banks/payee_rules/">Payee rules</a><br />
-    <a href="http://csv.hardessence.com/index.php/banks/categories/">Categories</a><br />
-    <a href="http://csv.hardessence.com/index.php/banks/payees_categories/">Payee-Category</a><br />
+    <a href="<?php echo base_url();?>index.php/banks/banks_management">Banks</a><br />
+    <a href="<?php echo base_url();?>index.php/banks/maps_management/">Maps</a><br />
+    <a href="<?php echo base_url();?>index.php/banks/skip_lines/">Skip Lines</a><br />
+    <a href="<?php echo base_url();?>index.php/banks/payee_rules/">Payee rules</a><br />
+    <a href="<?php echo base_url();?>index.php/banks/categories/">Categories</a><br />
+    <a href="<?php echo base_url();?>index.php/banks/payees_categories/">Payee-Category</a><br />
 
 </body>
 </html>

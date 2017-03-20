@@ -7,14 +7,28 @@ class Payee_model extends CI_Model {
             $this->load->database();
     }
     
-    public function createNewPayees($payees) {
-        print_r($payees);
-        foreach ($payees as $payee_name) {
-            if (!empty($payee_name)) {
-                //$query = "REPLACE INTO payees SET Name = '$payee_name';";
-                //$this->db->query($query);
+    public function insertUniquePayees($payees) {
+        $existingPayees = $this->getPayeesList();
+        $payees = array_unique($payees);
+        $absentElements = array_diff($payees,$existingPayees);
+        if (!empty($absentElements)) {
+            foreach ($absentElements as &$element) {
+                $element = '("'.$element.'")';
             }
+            $newPayees_str = implode(",", $absentElements);
+            $query = "INSERT INTO payees (Name) VALUES $newPayees_str;";
+            $this->db->query($query);
         }
-        
+    }
+
+    public function getPayeesList()
+    {
+        $existingPayees = $this->db->get('payees');
+        $existingPayees = $existingPayees->result_array();
+        foreach ($existingPayees as $payee) {
+            $result[] = $payee["Name"];
+        }
+        $result[] = '';
+        return $result;
     }
 }

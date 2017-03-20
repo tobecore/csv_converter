@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'tobecore.mysql.ukraine.com.ua',
-	'username' => 'tobecore_csv',
-	'password' => 'fvq2pr3n',
+	'hostname' => 'localhost', //tobecore.mysql.ukraine.com.ua
+	'username' => 'root', //tobecore_csv
+ 	'password' => 'root', //fvq2pr3n
 	'database' => 'tobecore_csv',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

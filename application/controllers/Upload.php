@@ -79,7 +79,7 @@ class Upload extends CI_Controller {
                         $payees
                         );
                 $result .= $results_arr[0];
-                $this->payee_model->createNewPayees($results_arr[1]);
+                $this->payee_model->insertUniquePayees($results_arr[1]);
             }
         }
         force_download("result.csv", $result);
