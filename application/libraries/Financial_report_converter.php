@@ -30,12 +30,24 @@ class Financial_report_converter {
             $clearedcsv_arr = $this->clearCommas(str_getcsv($line, $delimiter));
             $resultTransaction_arr = $this->mapFields($clearedcsv_arr, $currency, $bank, $map, $payees, $dateFormat);
             if (!empty($resultTransaction_arr)) {
-                $payeesList[] = $resultTransaction_arr['Payee'];
+                $payeesList[] = Array(
+                    'payeeName' => $resultTransaction_arr['Payee'],
+                    'operation' => $this->defineCashFlowType($resultTransaction_arr['Amount'])
+                );
                 $result_string .= implode(",", $resultTransaction_arr);
                 $result_string .= "\n";
             }
         }
         return Array($result_string, $payeesList); 
+    }
+
+    private function defineCashFlowType($amount) {
+        if ($amount >= 0) {
+            $cashFlowType = 'in';
+        } else {
+            $cashFlowType = 'out';
+        }
+        return $cashFlowType;
     }
     
     protected function csvToArray($fileurl) { //convert csv file to Array and fix an extra line break

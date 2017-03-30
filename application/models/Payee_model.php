@@ -8,9 +8,12 @@ class Payee_model extends CI_Model {
     }
     
     public function insertUniquePayees($payees) {
+        foreach ($payees as $payee) {
+            $payees_arr[] = $payee["payeeName"];
+        }
         $existingPayees = $this->getPayeesList();
-        $payees = array_unique($payees);
-        $absentElements = array_diff($payees,$existingPayees);
+        $payees_arr = array_unique($payees_arr);
+        $absentElements = array_diff($payees_arr,$existingPayees);
         if (!empty($absentElements)) {
             foreach ($absentElements as &$element) {
                 $element = '("'.$element.'")';
